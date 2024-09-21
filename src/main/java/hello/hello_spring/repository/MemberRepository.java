@@ -7,11 +7,14 @@ import java.util.Optional;
 
 @Repository
 public interface MemberRepository {
+
+
+
     Member save(Member member);
 
     Optional<Member> findById(Long id);
     Optional<Member> findByName(String name);
-    List<Member> fineAll();
+    List<Member> findAll();
 
 
 }

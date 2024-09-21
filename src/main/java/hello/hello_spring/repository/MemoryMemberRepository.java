@@ -2,7 +2,7 @@ package hello.hello_spring.repository;
 
 import hello.hello_spring.domain.Member;
 
-import javax.sound.midi.Sequence;
+import jakarta.*;
 import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository{
@@ -28,7 +28,7 @@ public class MemoryMemberRepository implements MemberRepository{
     }
 
     @Override
-    public List<Member> fineAll() {
+    public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
     public void clearStore(){
